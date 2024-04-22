@@ -3,9 +3,9 @@ const mongoose = require("mongoose");
 const path = require("path");
 require("dotenv").config();
 const app = express();
-const cors = require("cors");
+// const cors = require("cors");
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
 app.use(express.static(path.join(__dirname, "public")));
 
 const mongoURI = process.env.MONGO_URI;
